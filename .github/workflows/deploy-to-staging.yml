@@ -1,1 +1,6 @@
 name: Deploy to staging
+
+on:
+  merge:
+    branches:
+      - main
