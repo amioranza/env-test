@@ -51,4 +51,4 @@ jobs:
 
       - name: Gett env
         run: |
-          echo ${{ jobs.deploy_to_dev.environment}}
+          echo "$TF_WORKSPACE"
