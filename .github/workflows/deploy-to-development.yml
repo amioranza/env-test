@@ -51,4 +51,4 @@ jobs:
 
       - name: Gett env
         run: |
-          echo "$TF_WORKSPACE"
+          echo "${{ vars.TF_WORKSPACE }}"
