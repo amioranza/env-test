@@ -1,14 +1,14 @@
 name: Deploy to production
 
 on:
-  pull_request:
+  merge:
     branches:
       - main
 
 jobs:
   deploy_to_dev:
     runs-on: ubuntu-latest
-    name: Deploy to ${{ vars.TF_WORKSPACE }}
+    name: Deploy to production
     environment: production
     permissions:
       pull-requests: write
