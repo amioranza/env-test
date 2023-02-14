@@ -51,4 +51,4 @@ jobs:
 
       - name: Gett env
         run: |
-          echo ${{ job.environment}}
+          echo ${{ jobs.deploy_to_dev.environment}}
