@@ -9,7 +9,7 @@ jobs:
   deploy_to_dev:
     runs-on: ubuntu-latest
     name: Deploy to ${{ vars.TF_WORKSPACE }}
-    environment: ${{ vars.TF_WORKSPACE }}
+    environment: development
     permissions:
       pull-requests: write
       id-token: write
