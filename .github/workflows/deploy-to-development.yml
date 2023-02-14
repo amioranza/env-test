@@ -52,4 +52,4 @@ jobs:
       - name: Gett env
         run: |
           echo ${{ job.environment}}
-          echo ${{ job.$GITHUB_JOB.environment}}
+          # echo ${{ job.$GITHUB_JOB.environment}}
