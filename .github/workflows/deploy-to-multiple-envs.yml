@@ -106,6 +106,7 @@ jobs:
     environment: production
     needs:
       - deploy_to_staging
+      - deploy_to_test
     permissions:
       pull-requests: write
       id-token: write
