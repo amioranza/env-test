@@ -56,4 +56,4 @@ jobs:
       - uses: trstringer/manual-approval@v1
         with:
           secret: ${{ github.TOKEN }}
-          approvers: amioranza
+          approvers: workflow-approvers
