@@ -53,6 +53,11 @@ jobs:
         run: |
           echo "${{ vars.TF_WORKSPACE }}"
 
+      - uses: trstringer/manual-approval@v1
+        with:
+          secret: ${{ github.TOKEN }}
+          approvers: amioranza
+
   deploy_to_staging:
     runs-on: ubuntu-latest
     name: Deploy to staging
@@ -99,6 +104,11 @@ jobs:
       - name: Gett env
         run: |
           echo "${{ vars.TF_WORKSPACE }}"
+
+      - uses: trstringer/manual-approval@v1
+        with:
+          secret: ${{ github.TOKEN }}
+          approvers: amioranza
 
   deploy_to_prod:
     runs-on: ubuntu-latest
@@ -149,3 +159,8 @@ jobs:
       - name: Gett env
         run: |
           echo "${{ vars.TF_WORKSPACE }}"
+
+      - uses: trstringer/manual-approval@v1
+        with:
+          secret: ${{ github.TOKEN }}
+          approvers: amioranza
