@@ -54,7 +54,7 @@ jobs:
           echo "${{ vars.TF_WORKSPACE }}"
 
       - name: Approval
-        uses: "pascalgn/automerge-action@v0.13.2"
+        uses: "pascalgn/automerge-action@v0.15.5"
         with:
           require-comment: true
           require-status-checks: "continuous-integration/*"
