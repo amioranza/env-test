@@ -52,8 +52,3 @@ jobs:
       - name: Gett env
         run: |
           echo "${{ vars.TF_WORKSPACE }}"
-
-      - uses: trstringer/manual-approval@v1
-        with:
-          secret: ${{ github.TOKEN }}
-          approvers: workflow-approvers
